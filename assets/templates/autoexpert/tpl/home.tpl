@@ -1,10 +1,6 @@
 
 <script>
-		yepnope(
-			'<?php echo getFileTime("/assets/templates/autoexpert/css/home.css");?>',
-			undefined,
-			function() {}
-		);		
+	<!--include ../js/home.js-->		
 		yepnope('https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', undefined, function() {
 			if(typeof WebFont == 'object') {
 				WebFont.load({

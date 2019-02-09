@@ -24,7 +24,7 @@
 								</ul>
 								<blockquote class="heading-slide-blockquote">Любая не учтённая мелочь может поставить под угрозу даже самое простое депо. Пословица "Семь раз отмерь один раз отрежь" - моё золотое правило</blockquote>
 							</div>
-							<div style="background-image: url('/assets/templates/autoexpert/images/dikaprio.jpg');" class="slider-slick-item-photo"></div>
+							<div style="background-image: url('assets/templates/autoexpert/images/dikaprio.jpg');" class="slider-slick-item-photo"></div>
 						</div>
 					</div>
 					<div class="slider-slick-item">
@@ -43,7 +43,7 @@
 								</ul>
 								<blockquote class="heading-slide-blockquote">Любая не учтённая мелочь может поставить под угрозу даже самое простое депо. Пословица "Семь раз отмерь один раз отрежь" - моё золотое правило</blockquote>
 							</div>
-							<div style="background-image: url('/assets/templates/autoexpert/images/dikaprio.jpg');" class="slider-slick-item-photo"></div>
+							<div style="background-image: url('assets/templates/autoexpert/images/dikaprio.jpg');" class="slider-slick-item-photo"></div>
 						</div>
 					</div>
 					<div class="slider-slick-item">
@@ -62,7 +62,7 @@
 								</ul>
 								<blockquote class="heading-slide-blockquote">Любая не учтённая мелочь может поставить под угрозу даже самое простое депо. Пословица "Семь раз отмерь один раз отрежь" - моё золотое правило</blockquote>
 							</div>
-							<div style="background-image: url('/assets/templates/autoexpert/images/dikaprio.jpg');" class="slider-slick-item-photo"></div>
+							<div style="background-image: url('assets/templates/autoexpert/images/dikaprio.jpg');" class="slider-slick-item-photo"></div>
 						</div>
 					</div>
 				</div>

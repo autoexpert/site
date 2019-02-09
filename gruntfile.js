@@ -7,7 +7,7 @@ module.exports = function(grunt){
 		template: "autoexpert",
 		forceFtpUpdate: false,
 		generateFavicon: false,
-		dts: "D:/domains/evo.autoexpert.my/"
+		dts: ""
 	};
 	
 	var files = [
@@ -257,7 +257,7 @@ module.exports = function(grunt){
 						ext: '.php'
 					}
 				]
-			}/*,
+			},
 			tpl: {
 				options: {
 					pretty: '\t',
@@ -274,7 +274,7 @@ module.exports = function(grunt){
 						ext: '.tpl'
 					}
 				]
-			}*/
+			}
 		},
 		imagemin: {
 			base: {
