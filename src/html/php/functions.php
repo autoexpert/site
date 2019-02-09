@@ -18,6 +18,8 @@ function getFileContent($path, $type="html"){
 		$return = file_get_contents($server.$file);
 		$re = '/((?:\/\*.+\*\/)(?:(?:\s)+)?)/Us';
 		$return = trim(preg_replace($re, "", $return));
+		$re = '/\/assets\//m';
+		$return = trim(preg_replace($re, "assets/", $return));
 		switch($type){
 			case "js":
 				$return = "\n\t<script>\n\t\t".$return."\n\t</script>\n";
