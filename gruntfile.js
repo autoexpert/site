@@ -26,6 +26,25 @@ module.exports = function(grunt){
 		globalConfig : gc,
 		pkg : grunt.file.readJSON('package.json'),
 		exec: {
+			/*
+			php -f uslugi.php
+			del uslugi.php
+			php -f ushcherb.php
+			del ushcherb.php
+			php -f statiya.php
+			del statiya.php
+			php -f reviews.php
+			del reviews.php
+			php -f index.php
+			del index.php
+			php -f contacts.php
+			del contacts.php
+			php -f blog.php
+			del blog.php
+			php -f about.php
+			del about.php
+			*/
+
 			index: {
 				cmd: "compile.bat"
 			}
