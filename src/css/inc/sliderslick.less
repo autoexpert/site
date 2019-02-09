@@ -1,0 +1,83 @@
+.slider {
+	&-slick {
+		position: relative;
+		&-dotted {
+			.slick {
+				&-dots {
+					position: absolute;
+					bottom: 0px;
+					text-align: left;
+					li {
+						width: 20px;
+						height: 4px;
+						background-color: #a8a8a8;
+						margin-left: 4px;
+						margin-right: 4px;
+						border: unset;
+						transition: all .4s ease;
+						&, * {
+							outline: none !important;
+						}
+						&.slick-active, &:hover {
+							background-color: #04c973;
+						}
+						&.slick-active {
+							width: 100px;
+						}
+					}
+					@media (max-width: 991px) {
+						text-align: center;
+					}
+				}
+			}
+		}
+		&-arrows {
+			.slick{
+				&-arrow {
+					.arrow-icon {
+						font-family: 'webflow-icons';
+						speak: none;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						text-transform: none;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+				}
+			}
+			&-next, &-prev {
+				display: flex;
+				width: 60px;
+				height: 60px;
+				justify-content: center;
+				align-items: center;
+				border: 1px solid #ececec;
+				background-color: #04c973;
+				color: #fff;
+				font-size: 26px;
+				.user-select();
+				cursor: pointer;
+				transition: all .2s ease;
+				&:hover {
+					background-color: #07da74;
+				}
+			}
+			&-next {
+				.arrow-icon {
+					&:before {
+						content: "\e600";
+					}
+				}
+			}
+			&-prev {
+				.arrow-icon {
+					&:before {
+						content: "\e601";
+					}
+				}
+			}
+		}
+	}
+}

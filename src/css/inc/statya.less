@@ -1,0 +1,220 @@
+.statya {
+	.wrapper {
+		&-page {
+			&.wrapper {
+				max-width: 880px;
+			}
+		}
+	}
+	.section {
+		&-name {
+			align-items: flex-start;
+		}
+		&-statya {
+			position: relative;
+			width: 100%;
+			display: block;
+		}
+		&-wrapperrow, &-statya {
+			p, ul, ol, blockquote {
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+			blockquote {
+				margin-left: 0;
+				margin-right: 0;
+				font-size: 18px;
+				line-height: 1.5em;
+				padding-left: 20px;
+				box-shadow: 0 0 2px 0px #ccc;
+				border-left: 3px solid #ccc;
+				border-radius: 3px;
+				background-color: #fcfcfc;
+				padding-left: 20px;
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+			}
+			* {
+				line-height: 1.8em;
+			}
+		}
+	}
+	&.articles {
+		overflow: unset;
+		.s_block {
+			&-wrapper {
+				padding-top: 20px;
+			}
+		}
+	}
+	.articles {
+		&-nav {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: flex-start;
+			align-items: flex-start;
+			flex: 1 1 100%;
+			&-left, &-right {
+				display: flex;
+				position: relative;
+				overflow: hidden;
+				flex: 1 1 50%;
+				margin-bottom: 20px;
+				border-top: 1px solid #eee;
+				border-bottom: 1px solid #eee;
+				border-left: 1px solid #eee;
+				border-right: 1px solid #eee;
+				padding: 10px;
+				> a {
+					flex: 1 1 100%;
+					display: flex;
+					flex-wrap: nowrap;
+					align-items: center;
+					> span {
+						display: flex;
+						max-width: 335px;
+					}
+					&:before {
+						content: "$";
+						background-color: #04c973;
+						color: #fff;
+						font-size: 26px;
+						font-family: webflow-icons;
+						speak: none;
+						font-style: normal;
+						font-weight: 400;
+						font-variant: normal;
+						text-transform: none;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						width: 60px;
+						height: 60px;
+						border: 1px solid #ececec;
+						background-color: #04c973;
+						color: #fff;
+						font-size: 26px;
+						.user-select();
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						transition: background-color .2s ease;
+					}
+					&, &:hover, &:focus {
+						text-decoration: none;
+					}
+					&:hover {
+						&:before {
+							background-color: #07da74;
+						}
+					}
+				}
+				&.disabled {
+					> a {
+						cursor: not-allowed;
+						&, &:hover, &:focus {
+							&:before {
+								background-color: #d1f9e7;
+							}
+						}
+					}
+				}
+				
+				@media (max-width: 767px){
+					flex: 1 1 100%;
+					> a {
+						> span {
+							max-width: unset;
+						}
+					}
+				}
+			}
+			&-left {
+				> a {
+					flex-direction: row;
+					margin-right: 10px;
+					> span {
+						text-align: left;
+					}
+					&:before {
+						margin-right: 15px;
+						content: "\e601";
+					}
+				}
+			}
+			&-right {
+				border-left: unset;
+				> a {
+					flex-direction: row-reverse;
+					margin-left: 10px;
+					> span {
+						text-align: right;
+					}
+					&:before {
+						margin-left: 15px;
+						content: "\e600";
+					}
+				}
+			}
+			&-all {
+				display: flex;
+				flex: 1 1 100%;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				> a {
+					display: flex;
+					font-weight: 400;
+					padding: 10px 15px;
+					border: 2px solid #04c973;
+					border-radius: 2px;
+					margin-left: 10px;
+					margin-right: 10px;
+					margin-bottom: 10px;
+					margin-top: 10px;
+					transition: background-color .3s ease,color .3s ease;
+					min-width: 120px;
+					justify-content: center;
+					&, &:focus, &:hover {
+						text-decoration: none;
+					}
+					&, &:focus {
+						color: #04c973;
+						background-color: #fff;
+					}
+					&:hover {
+						color: #fff;
+						background-color: #04c973;
+					}
+				}
+			}
+			@media (max-width: 767px){
+				&-left, &-right {
+					border-top: 1px solid #eee;
+					border-bottom: 1px solid #eee;
+					border-left: 1px solid #eee;
+					border-right: 1px solid #eee;
+					a {
+						margin-left: 0px;
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+.default {
+	.statya {
+		.section {
+			&-name {
+				align-items: center;
+			}
+		}
+	}
+}

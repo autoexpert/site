@@ -1,0 +1,15 @@
+include php/functions.php
+include php/obstart.php
+doctype html
+html.startmenu.loading.complete.no-js(lang="ru" prefix="og: http://ogp.me/ns#")
+	- var title = "Услуги и цены";
+	include inc/head
+	body.start.pages
+		include inc/header
+		.mainwrapper
+			main.main
+				include inc/us_01
+				include inc/us_02
+			include inc/footer
+		include inc/javascript
+include php/obend.php

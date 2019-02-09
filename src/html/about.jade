@@ -1,0 +1,17 @@
+include php/functions.php
+include php/obstart.php
+doctype html
+html.startmenu.loading.complete.no-js(lang="ru" prefix="og: http://ogp.me/ns#")
+	- var title = "О компании";
+	include inc/head
+	body.start.pages
+		include inc/header
+		.mainwrapper
+			main.main
+				include inc/ab_01
+				include inc/ab_02
+				include inc/ab_03
+				include inc/ab_04
+			include inc/footer
+		include inc/javascript
+include php/obend.php

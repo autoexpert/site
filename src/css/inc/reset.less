@@ -1,0 +1,260 @@
+* {
+	&,
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #333;
+	margin: 0px;
+	min-height: 100%;
+	background-color: #fff;
+	line-height: 20px;
+	&.openmenu {
+		overflow: hidden;
+	}
+}
+html, body {
+	//min-height: 100vh;
+}
+a {
+	color: #04c973;
+	&:active,
+	&:hover,
+	&:focus {
+		outline: 0;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	margin-top: 0px;
+}
+h1 {
+	font-size: 40px;
+	line-height: 1em;
+}
+h2 {
+	font-size: 36px;
+	line-height: 1.2em;
+}
+h3 {
+	font-size: 24px;
+	line-height: 1.2em;
+}
+h4 {
+	font-size: 20px;
+	line-height: 1.2em;
+}
+h5 {
+	font-size: 18px;
+	line-height: 1.2em;
+}
+h6 {
+	font-size: 18px;
+	line-height: 1.2em;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.8em;
+	font-weight: 300;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+blockquote {
+	margin-bottom: 0px;
+	font-size: 14px;
+	line-height: 1.6em;
+	font-style: italic;
+	font-weight: 300;
+}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+input[type="checkbox"] {
+	appearance: none;
+	background-image: url('assets/templates/autoexpert/images/checkbox.svg?v=1.0.1');
+	background-position: 50% -25px;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: auto 100%;
+	padding: 0px;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	border: 2px solid #04c973;
+	outline: none;
+	transition: background-position .2s ease;
+	&:checked {
+		background-position: 50% 50%;
+	}
+}
+input[name="last_name"] {
+	display: none !important;
+}
+.red {
+	color: red;
+}
+.header {
+	.contact-address {
+		color: #ececec;
+	}
+}
+.mainwrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main.main {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+footer.footer {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+.wowblock {
+	position: relative;
+	width: 100%;
+}
+.pages {
+	main.main {
+		padding-top: 120px;
+	}
+}
+.clearfix {
+	.clearfix();
+}
+.user-select {
+	.user-select();
+}
+.parallax {
+	&-mirror {
+		opacity: 0;
+		transition: opacity 2s ease;
+	}
+}
+.showing {
+	.parallax {
+		&-mirror {
+			opacity: 1;
+		}
+	}
+}
+
+.page-contact-detail-control {
+	&-ui {
+		margin: 10px;
+		margin-left: 0;
+		text-align: center;
+		line-height: 1;
+		&-wrapper {
+			background-color: #fff;
+			margin-left: -11px;
+		}
+		&-link {
+			&, &:focus {
+				display: block;
+				direction: ltr;
+				overflow: hidden;
+				text-align: center;
+				position: relative;
+				color: #000;
+				.user-select();
+				font-size: 11px;
+				background-color: #fff;
+				padding: 9px 8px;
+				border-bottom-left-radius: 2px;
+				border-top-left-radius: 2px;
+				background-clip: padding-box;
+				box-shadow: rgba(0,0,0,.3) 0 1px 4px -1px;
+				min-width: 29px;
+				font-weight: 500;
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: none;
+				background-color: #ededed;
+				color: #000;
+			}
+		}
+	}
+}
+.s_block {
+	&-wrapper {
+		padding-top: 80px;
+		width: 100%;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		.clearfix();
+		li {
+			display: block;
+			float: left;
+			box-shadow: rgba(0,0,0,.3) 0 1px 4px -1px;
+			a {
+				display: block;
+				padding: 15px;
+				transition: background-color .3s ease, color .3s ease;
+				font-size: 30px;
+				&, &:focus, &:active {
+					background-color: #fff;
+					color: #04c973;
+				}
+				&:hover {
+					background-color: #04c973;
+					color: #fff;
+				}
+				&, &:focus, &:active, &:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.frame {
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+	margin-bottom: 20px;
+	&_1x1, &_4x3, &_16x9 {
+		position: relative;
+		height: 0;
+		overflow: hidden;
+		> * {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+		}
+	}
+	&_1x1 {
+		padding-bottom: percentage(1);
+	}
+	&_4x3 {
+		padding-bottom: percentage(1/4*3);
+	}
+	&_16x9 {
+		padding-bottom: percentage(1/16*9);
+	}
+}

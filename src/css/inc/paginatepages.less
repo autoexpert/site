@@ -1,0 +1,61 @@
+.paginatepages {
+	.pagination {
+		position: relative;
+		.text-center();
+		ul {
+			display: inline-block;
+			.clearfix();
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			li {
+				position: relative;
+				float: left;
+				box-shadow: 0px 0px 2px #04c973;
+				background-color: #fff;
+				a {
+					&, &:focus {
+						color: #04c973;
+						background-color: #fff;
+					}
+					&:hover {
+						color: #fff;
+						background-color: #04c973;
+					}
+					&, &:hover, &:focus {
+						text-decoration: none;
+					}
+					transition: all .2s ease;
+				}
+				a, span {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 50px;
+					height: 50px;
+					font-size: 18px;
+					font-weight: 600;
+				}
+				&.active {
+					a, span {
+						&, &:focus {
+							color: #fff;
+							background-color: #04c973;
+							cursor: default;
+						}
+						&:hover {
+							color: #fff;
+							background-color: #04c973;
+							cursor: default;
+						}
+					}
+				}
+				&.dots {
+					span {
+						
+					}
+				}
+			}
+		}
+	}
+}

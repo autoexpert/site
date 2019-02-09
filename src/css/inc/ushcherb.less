@@ -1,0 +1,134 @@
+.ushpage {
+	.section {
+		&-wrapperrow {
+			width: 100%;
+		}
+	}
+	.slider {
+		&-slick {
+			.heading {
+				&-slide {
+					&-block {
+						&-description {
+							*, & {
+								color: #04c973;
+								font-size: 16px;
+								line-height: 1.4em;
+								
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.ushpage {
+		&-col {
+			padding-top: 40px;
+			&-wrapper {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				flex-direction: column-reverse;
+				color: #232333;
+				justify-content: center;
+				align-items: flex-start;
+			}
+			&-text {
+				text-align: center;
+				width: 100%;
+				flex: 1 1 100%;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+				h2, h3, h4, h5, h6 {
+					margin-top: 0px;
+					margin-bottom: 20px;
+					font-size: 18px;
+					line-height: 1.4em;
+					font-weight: 500;
+					letter-spacing: 0.2px;
+					width: 100%;
+				}
+				p {
+					max-width: 300px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+			&-icon {
+				height: 100px;
+				width: 100%;
+				margin-bottom: 40px;
+				padding-left: 20px;
+				padding-right: 20px;
+				img {
+					width: 100px;
+					margin-left: auto;
+					margin-right: auto;
+					display: block;
+				}
+			}
+		}
+	}
+	.slider {
+		&-slick {
+			&-arrows {
+				@media(max-width: 767px){
+					top: 90px;
+					bottom: auto;
+				}
+			}
+			&-item {
+				&-wrapper {
+					@media(max-width: 991px) {
+						flex-direction: row;
+					}
+					@media(max-width: 767px) {
+						flex-direction: column;
+					}
+				}
+				&-photo {
+					min-height: 600px;
+					box-shadow: 0 1px 15px 0 rgba(0,0,0,.08);
+					margin-bottom: 20px;
+					margin-top: 20px;
+					margin-right: 20px;
+					background-size: contain;
+					background-position: top center;
+					width: 50%;
+					@media(max-width: 991px) {
+						width: 40%;
+					}
+					@media(max-width: 767px){
+						min-height: 600px;
+						margin-bottom: 0px;
+						margin-top: 20px;
+						background-position: 50% 50%;
+					}
+				}
+				&-description {
+					width: 50%;
+					margin-right: 10px;
+					@media(max-width: 991px) {
+						width: 60%;
+					}
+				}
+				&-description, &-photo {
+					height: 100%;
+					@media(max-width: 767px) {
+						margin-right: 0px;
+						width: 100%;
+						height: unset;
+					}
+				}
+			}
+		}
+	}
+	.articles {
+		&-nav {
+			/*padding-top: 80px;*/
+		}
+	}
+}

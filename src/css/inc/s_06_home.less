@@ -1,0 +1,88 @@
+.homeslider {
+	.no-animation {
+		.slider {
+			&-slick {
+				&-item {
+					&.slick {
+						&-active {
+							.slider {
+								&-slick {
+									&-item {
+										&-photo {
+											transform: translateX(115%);
+										}
+										&-description {
+											transform: translateX(-115%);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.animationPush {
+		.slider {
+			&-slick {
+				&-item {
+					&.slick {
+						&-active {
+							.slider {
+								&-slick {
+									&-item {
+										&-photo, &-description {
+											transition: transform 1s ease .7s;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.slider {
+		&-slick {
+			&-item {
+				ul, ol {
+					margin-top: 0;
+					margin-bottom: 30px;
+					padding: unset;
+					> li {
+						
+					}
+				}
+				ul {
+					> li {
+						position: relative;
+						list-style: none;
+						display: flex;
+						margin-bottom: 10px;
+						padding-top: 10px;
+						padding-right: 20px;
+						padding-bottom: 10px;
+						padding-left: 37px;
+						align-items: center;
+						text-align: left;
+						&:before {
+							display: block;
+							content: " ";
+							position: absolute;
+							top: 6px;
+							left: 0px;
+							width: 27px;
+							height: 27px;
+							background-position: 50% 50%;
+							background-repeat: no-repeat;
+							background-image: url(assets/templates/autoexpert/images/checked_01.svg);
+							background-size: contain;
+						}
+					}
+				}
+			}
+		}
+	}
+}

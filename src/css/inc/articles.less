@@ -1,0 +1,101 @@
+.articles {
+	&-item {
+		&-link {
+			overflow: hidden;
+			white-space: nowrap;
+			text-indent: 120%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		.stock {
+			&-block {
+				box-shadow: inset 0px 0px 2px #bdbdbd;
+				&-left {
+					background-position: center top;
+					background-size: cover;
+					background-repeat: no-repeat;
+					cursor: pointer;
+					box-shadow: inset 0px 0px 0px #000;
+					transition: box-shadow .2s ease;
+					position: relative;
+					&:before {
+						display: block;
+						content: " ";
+						background-color: rgba(35, 35, 51, .75);
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						right: 0px;
+						bottom: 0px;
+						width: 100%;
+						height: 100%;
+						z-index: 2;
+						transition: all .2s ease;
+					}
+					&:hover {
+						box-shadow: inset 0px 0px 120px #000;
+						&:before {
+							background-color: rgba(35, 35, 51, .45);
+						}
+					}
+					@media (max-width:767px) {
+						min-height: 320px;
+					}
+				}
+				&-right {
+					background-image: unset;
+					position: relative;
+					padding-bottom: 100px;
+					.heading {
+						&-box {
+							height: 160px;
+							overflow: hidden;
+							p {
+								max-width: 100%;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-line-clamp: 3;
+								-webkit-box-orient: vertical;
+							}
+							@media (max-width: 480px) {
+								height: auto;
+								max-height: unset;
+								h2, h3, h4 {
+									font-size: 20px;
+								}
+								p {
+									-webkit-line-clamp: unset;
+								}
+							}
+							
+						}
+					}
+					@media (max-width: 480px) {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+				}
+				.button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex: 0 0 auto;
+					border-radius: 2px;
+					position: absolute;
+					bottom: 30px;
+					left: 40px;
+				}
+			}
+		}
+		@media (max-width: 480px){
+			padding-left:0px;
+			padding-right: 0px;
+		}
+	}
+}

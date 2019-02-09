@@ -1,0 +1,36 @@
+.freecons {
+	position: relative;
+	color: #fff;
+	.wrapper {
+		&-page {
+			position: relative;
+			z-index: 10;
+			.section {
+				&-text {
+					&-description {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.paralax {
+		min-height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		z-index: 1;
+		.gradient {
+			background-image: linear-gradient(180deg, rgba(23, 26, 32, .7), rgba(23, 26, 32, .7));
+			background-position: 0px 0px;
+			background-attachment: scroll;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.timemoney {
+	.stock {
+		&-block {
+			background-color: #fff;
+			&-left {
+				background-image: url('@{img}timemoney.jpg');
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-size: cover;
+			}
+			&-right {
+				
+			}
+			&-left, &-right {
+				width: 50%;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				margin-top: 0px;
+				margin-bottom: 20px;
+			}
+			@media(max-width: 991px) {
+				&-left {
+					display: none;
+				}
+				&-left, &-right {
+					width: 100%;
+					p {
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				&-heading {
+					text-align: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+	.form {
+		&-vertical {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		&-text {
+			&-field {
+				width: 100%;
+			}
+		}
+		@media(max-width: 991px) {
+			&-vertical {
+				width: 100%;
+				justify-content: flex-start;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "name": "autoexpert",
+  "description": "",
+  "main": "package.json",
+  "authors": [
+    "ProjectSoft <projectsoft2009@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "yepnope": "^2.0.0",
+    "jquery": "^1.12.4",
+    "jquery.easing": "https://github.com/gdsmith/jquery.easing.git#^1.4.1",
+    "jqueryui-touch-punch": "https://github.com/furf/jquery-ui-touch-punch.git",
+    "bootstrap": "^3.3.7",
+    "jquery-ui": "https://github.com/components/jqueryui.git#1.12.1",
+    "slick-carousel": "https://github.com/kenwheeler/slick.git#1.6.0",
+    "fancybox": "^3.0.47",
+    "hyphernationRUru": "https://github.com/ProjectSoft-STUDIONIONS/hyphernationRUru.git",
+    "jquery_lazyload": "jquery.lazyload#^1.9.7",
+    "arcticModal": "https://studionions@bitbucket.org/projectsoft-studionions/arcticmodal.git",
+    "parallax.js": "https://github.com/pixelcog/parallax.js.git#^1.4.2",
+    "mixitup": "https://github.com/patrickkunka/mixitup.git#^3.2.2",
+    "Jarallax": "https://github.com/CodeHunger/Jarallax.git",
+    "jquery.scroolly": "https://github.com/chayka/jQuery.Scroolly.git#^0.0.1",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "https://github.com/daneden/animate.css.git#^3.5.2",
+    "normalize-css": "^7.0.0",
+    "jquery.cookie": "https://github.com/carhartl/jquery-cookie.git#^1.4.1",
+    "jquery.transform.js": "https://github.com/louisremi/jquery.transform.js.git",
+    "jquery.maskedinput": "https://github.com/digitalBush/jquery.maskedinput.git#^1.4.1",
+    "raty": "https://github.com/STUDIONIONS/raty.git#^2.8.0"
+  }
+}

@@ -1,0 +1,250 @@
+.form {
+	&-block {
+		margin: 0 0 15px;
+		display: flex;
+		width: 100%;
+		margin-bottom: 0px;
+		justify-content: center;
+	}
+	&-horizontal {
+		display: flex;
+		max-width: 900px;
+		justify-content: center;
+		flex-wrap: wrap;
+		.form {
+			&-text {
+				&-field {
+					width: 33%;
+					@media (max-width: 991px){
+						width: 100%;
+					}
+				}
+			}
+		}
+		&-box {
+			&-submit {
+				order: 4;
+				display: inline-flex;
+				.user-select();
+				margin-top: 10px;
+				&-check {
+					align-items: center;
+					display: flex;
+					flex: 0 1 100%;
+					span {
+						position: relative;
+						display: block;
+						padding-left: 35px;
+						input[type="checkbox"] {
+							position: absolute;
+							top: 50%;
+							margin-top: -12.5px;
+							left: 0px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		button {
+			&.button {
+				&.big {
+					@media (max-width: 991px) {
+						max-width: unset;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	&-vertical {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		&-text {
+			&-field {
+				width: 100%;
+			}
+		}
+		&-box {
+			&-submit {
+				flex-direction: row-reverse;
+				display: flex;
+				justify-content: flex-end;
+				.user-select();
+				&-check {
+					padding-left: 20px;
+					align-items: center;
+					display: flex;
+					flex: 0 1 100%;
+					span {
+						position: relative;
+						display: block;
+						padding-left: 35px;
+						input[type="checkbox"] {
+							position: absolute;
+							top: 50%;
+							margin-top: -12.5px;
+							left: 0px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			@media(max-width: 767px) {
+				&-submit {
+					flex-direction: column;
+					justify-content: unset;
+					&-check {
+						min-height: 62px;
+						flex: 1 1 100%;
+						padding-left: unset;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+		@media(max-width: 991px) {
+			&-vertical {
+				width: 100%;
+				justify-content: flex-start;
+			}
+		}
+	}
+	&-control {
+		display: block;
+		width: 100%;
+		height: 38px;
+		padding: 8px 12px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 1.428571429;
+		color: #333333;
+		vertical-align: middle;
+		background-color: #ffffff;
+		border: 1px solid #cccccc;
+	}
+	&-text {
+		&-field {
+			height: 60px;
+			min-width: 280px;
+			padding-right: 20px;
+			padding-left: 20px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgba(161, 161, 161, .2);
+			color: #4f5888;
+			font-weight: 300;
+			letter-spacing: 0.4px;
+			margin-right: 20px;
+		}
+	}
+	&-group {
+		&.has {
+			&-error, &-warning {
+				.help {
+					&-block {
+						display: block;
+					}
+				}
+			}
+			&-error {
+				.help {
+					&-block {
+						color: red;
+					}
+				}
+			}
+			&-warning {
+				.help {
+					&-block {
+						color: red;
+					}
+				}
+			}
+		}
+	}
+	&-helper {
+		padding: 10px;
+		border-radius: 3px;
+		box-shadow: 0 0 2px #f82727;
+		margin-bottom: 20px;
+		background-color: #fbe1e1;
+		color: #f66f6f;
+		border-left: 1px solid #f78091;
+	}
+	@media(max-width: 991px){
+		&-horizontal {
+			max-width: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			flex-direction: column;
+			.big {
+				width: 100%;
+			}
+		}
+		&-text {
+			&-field {
+				margin-right: unset;
+			}
+		}
+	}
+}
+.error_list {
+	display: block;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	color: red;
+	animation: autoexpertOpacityHeightIn .2s ease;
+}
+.messages_list {
+	display: block;
+	margin: 0;
+	padding: 10px;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	animation: autoexpertOpacityHeightIn .2s ease;
+	.text-center();
+}
+.form {
+	&-horizontal {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+#formcallbackfree {
+	.error_list,
+	.messages_list {
+		max-width: 824px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+#formcallbackgray,
+#formcallbackfree,
+#formcallbacktime,
+.form-block {
+	flex-direction: column;
+	position: relative;
+	&.submit {
+		&:before {
+			display: block;
+			content: " ";
+			position: absolute;
+			z-index: 300;
+			background-color: rgba(255, 255, 255, .2);
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+include php/functions.php
+include php/obstart.php
+doctype html
+html.startmenu.loading.complete.no-js(lang="ru" prefix="og: http://ogp.me/ns#")
+	- var title = "Статья";
+	include inc/head
+	body.start.pages
+		include inc/header
+		.mainwrapper
+			main.main
+				include inc/st_01
+				include inc/st_02
+				include inc/bl_06
+			include inc/footer
+		include inc/javascript
+include php/obend.php

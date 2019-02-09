@@ -1,0 +1,150 @@
+.form {
+	&-control {
+		&-block {
+			position: relative;
+			overflow: hidden;
+			&.required {
+				position: relative;
+				&:before {
+					position: absolute;
+					right: 5px;
+					top: 5px;
+					content: "*";
+					color: red;
+				}
+				&-success {
+					&:before {
+						content: " ";
+					}
+				}
+			}
+			textarea {
+				resize: vertical;
+				max-width: 100%;
+				width: 100%;
+				min-width: 100%;
+			}
+		}
+	}
+}
+.form {
+	&-reviews, &-popup {
+		.form {
+			&-vertical {
+				&-control {
+					&-title {
+						display: block;
+						.user-select();
+						margin-bottom: 5px;
+						font-weight: 400;
+						small {
+							font-weight: 300;
+						}
+					}
+				}
+				&-raiting {
+					.reyting  {
+						color: #04c973;
+						display: flex;
+						width: 100%;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						align-items: center;
+						align-content: center;
+						justify-content: flex-start;
+						text-align: left;
+						margin-bottom: 15px;
+					}
+				}
+				&-avatar {
+					display: block;
+					position: relative;
+					&-block {
+						display: flex;
+						width: 100%;
+						position: relative;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						margin-bottom: 15px;
+						&-text, .button {
+							position: relative;
+							z-index: 1;
+							flex: 1 1 50%;
+							align-items: center;
+						}
+						&-text {
+							justify-content: flex-start;
+							overflow: hidden;
+							align-content: center;
+							display: flex;
+							padding: 5px;
+							border-top: 1px solid #ececec;
+							border-left: 1px solid #ececec;
+							border-bottom: 1px solid #ececec;
+							> span {
+								white-space: nowrap;
+								margin-right: 5px;
+								text-overflow: ellipsis;
+								display: block;
+								align-self: center;
+								width: 100%;
+								overflow: hidden;
+							}
+						}
+						.button {
+							justify-content: center;
+							text-align: center;
+						}
+						[type="file"] {
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							right: 0px;
+							bottom: 0px;
+							width: 100%;
+							height: 100%;
+							z-index: 3;
+							opacity: 0;
+							cursor: pointer;
+						}
+						&:hover {
+							.button {
+								&-green {
+									background-color: #07da74;
+									box-shadow: 0 10px 30px 0 rgba(0,0,0,.15);
+								}
+							}
+						}
+					}
+				}
+				&-box {
+					&-submit {
+						flex-direction: column;
+						&-check {
+							padding-left: 0px;
+							margin-bottom: 15px;
+						}
+						.button {
+							&.big {
+								max-width: 180px;
+								height: 48px;
+								align-self: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.hidden {
+	display: none !important;
+}
+.testform {
+	max-width: 320px;
+	.clearfix();
+	margin-left: auto;
+	margin-right: auto;
+}

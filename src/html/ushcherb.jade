@@ -1,0 +1,21 @@
+include php/functions.php
+include php/obstart.php
+doctype html
+html.startmenu.loading.complete.no-js(lang="ru" prefix="og: http://ogp.me/ns#")
+	- var title = "Оценка ущерба";
+	include inc/head
+	body.start.pages
+		include inc/header
+		.mainwrapper
+			main.main
+				include inc/ush_01
+				include inc/ush_02
+				include inc/ush_03
+				include inc/ush_04
+				include inc/ush_05
+				include inc/ush_06
+				include inc/ush_07
+				include inc/bl_06
+			include inc/footer
+		include inc/javascript
+include php/obend.php

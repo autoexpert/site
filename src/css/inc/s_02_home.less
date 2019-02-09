@@ -1,0 +1,55 @@
+.specialofer {
+	.wrapper {
+		&-page {
+			&-block {
+				margin-bottom: 45px;
+				&:last-child {
+					margin-bottom: unset;
+				}
+			}
+		}
+	}
+	.stock {
+		&-block {
+			&-left {
+				&.blue {
+					font-size: 80px;
+					font-weight: 100;
+				}
+			}
+			&-right {
+				background-image: linear-gradient(180deg, rgba(35, 35, 51, .75), rgba(35, 35, 51, .75)), url('@{img}car6.jpg');
+				background-position: 0px 0px, 100% 50%;
+				background-size: auto, cover;
+			}
+			.button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex: 0 0 auto;
+				border-radius: 2px;
+			}
+		}
+	}
+	.heading {
+		&-box {
+			display: flex;
+			height: auto;
+			flex-direction: column;
+			align-items: flex-start;
+			color: #fff;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin-top: 0px;
+				margin-bottom: 20px;
+				font-size: 26px;
+				line-height: 1.2em;
+				font-weight: 400;
+			}
+		}
+	}
+}

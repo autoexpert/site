@@ -1,0 +1,21 @@
+include php/functions.php
+include php/obstart.php
+doctype html
+html.startmenu.loading.complete.no-js(lang="ru" prefix="og: http://ogp.me/ns#")
+	- var title = "Главная";
+	include inc/head
+	body.start
+		include inc/header
+		.mainwrapper
+			main.main
+				include inc/s_01_home
+				include inc/s_02_home
+				include inc/s_03_home
+				include inc/s_04_home
+				include inc/s_05_home
+				include inc/s_07_home
+				include inc/s_06_home
+				include inc/s_08_home
+			include inc/footer
+		include inc/javascript
+include php/obend.php
