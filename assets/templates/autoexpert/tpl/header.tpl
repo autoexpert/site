@@ -25,7 +25,7 @@
 				<div class="logo-nav">Независимая экспертиза и юридические услуги</div>
 				<nav role="navigation" class="nav">
 					<ul>
-						<li><a href="/">Главная</a></li>
+						<li><a href="index.html">Главная</a></li>
 						<li><a href="uslugi.html">Услуги и цены</a></li>
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="reviews.html">Отзывы</a></li>
