@@ -13,7 +13,7 @@
 					</div>
 					<div class="contact">
 						<div class="contact-address">г. Екатеринбург, ул. Сибирский тракт, д. 8 корп. Б офис 126</div>
-						<div class="contact-phone"><a href="+73433057035">+7 (343) 305 70 35</a><a href="+79530007530">+7 (953) 000 75 30 </a></div>
+						<div class="contact-phone"><a href="tel:+73433057035">+7 (343) 305 70 35</a><a href="tel:+79530007530">+7 (953) 000 75 30 </a></div>
 						<div class="contact-button"><a href="javascript:;" class="button button-green">Заказать звонок</a></div>
 						<div class="contact-client"><a href="javascript:;"><img src="assets/templates/autoexpert/images/client.svg" alt=""/></a></div>
 					</div>
